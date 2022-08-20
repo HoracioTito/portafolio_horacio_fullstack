@@ -8,6 +8,10 @@ Created: August 2014
 License URI: http://support.wrapbootstrap.com/
 File Description: Place here your custom CSS styles
 */
+html {
+    scroll-behavior: smooth;
+  }
+
 .div-my-photo {
     display: flex;
     position: absolute;
@@ -22,9 +26,31 @@ File Description: Place here your custom CSS styles
     width: 200px;
 }
 
+
+@media screen and (min-width: 275px) {
+    .div-my-photo {
+        margin: 25px 0 0 -17px;
+
+    }
+
+    .my-photo {
+        width: 110px;
+    }
+}
+
 @media screen and (min-width: 400px) {
     .div-my-photo {
-        margin: 70px 0 0 0;
+        margin: 40px 0 0 -17px;
+
+    }
+
+    .my-photo {
+        width: 120px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .div-my-photo {
+        margin: 60px 0 0 -17px;
 
     }
 
